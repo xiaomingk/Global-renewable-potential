@@ -1,4 +1,4 @@
-using CSV, DataFrames, plots
+using CSV, DataFrames
 function CSVOUT(reg)
 S=CSV.read("$(reg)_VRE.csv",DataFrame);
 SS=Matrix(S);

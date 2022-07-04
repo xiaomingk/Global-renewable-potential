@@ -1,14 +1,15 @@
 using GlobalEnergyGIS, JLD, ImageTransformations
 GE=GlobalEnergyGIS
 #Average wind speed from GlobalWindAtlas (high spatial resolution);
-averagespeed_Atlas=GE.getwindatlas(100);
-saveTIFF(averagespeed_Atlas, "averagewindspeed_Atlas.tif", [-180.0, -90.0, 180.0, 90.0])
-#Average wind speed profile from ERA5 (low spatial resolution);
-averagespeed_ERA5= GE.h5read(GE.in_datafolder("era5wind2018.h5"),"meanwind");
+averagespeed_Atlas=GE.readraster("Global Wind Atlas v3 - 100m wind speed.tif");
+averagespeed_Atlas_clean=clamp!(averagespeed_Atlas, 0, 25)
+saveTIFF(averagespeed_Atlas_clean, "averagewindspeed_Atlas.tif", [-180.0, -90.0, 180.0, 90.0])
+#Average wind speed profile from ERA5 (low spatial resolution) for 2018;
+averagespeed_ERA5=GE.h5read("era5wind2018.h5","meanwind");
 saveTIFF(averagespeed_ERA5, "averagewindspeed_ERA5.tif", [-180.0, -90.0, 180.0, 90.0])
 #Hourly wind speed profile from ERA5;
-hourlyspeed = GE.h5read(GE.in_datafolder("era5wind2018.h5"),"wind");
-JLD.save("hourlywindspeed.jld","hourlyspeed",hourlyspeed , compress=true)
+hourlyspeed =GE.h5read("era5wind2018.h5","wind");
+JLD.save("hourlywindspeed.jld","hourlyspeed",hourlyspeed, compress=true)
 #Parameter definition;
 #Spatial resolution;
 res = 0.01
@@ -53,8 +54,8 @@ end
 windCF=sum(Capacit_factor(t) for t in 1:8760)/8760
 saveTIFF(windCF,"windCF.tif", [-180.0, -90.0, 180.0, 90.0])
 
-#Calculate average solar capacity factor;
-hourlysolar = GE.h5read(GE.in_datafolder("era5solar2018.h5"),"GTI")
+#Calculate average solar capacity factor from ERA5 for 2018;
+hourlysolar =GE.h5read("era5solar2018.h5","GTI")
 solarCFERA5=sum(hourlysolar[t,:,:] for t in 1:8760)/8760
-solarCF = imresize(solarCFERA5,ratio=28.125)
+solarCF =imresize(solarCFERA5,ratio=28.125)
 saveTIFF(solarCF,"solarCF.tif", [-180.0, -90.0, 180.0, 90.0])

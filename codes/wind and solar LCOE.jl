@@ -1,7 +1,6 @@
 using GlobalEnergyGIS, ImageTransformations, JLD
 GE=GlobalEnergyGIS
 
-
 solar_CF=GE.readraster("solarCF.tif")
 wind_CF=GE.readraster("windCF.tif")
 discountrate=GE.readraster("discountrate.tif")
