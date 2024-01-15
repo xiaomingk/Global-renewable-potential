@@ -64,8 +64,8 @@ function supply_pv(reg, plant_area, persons_per_km2, sminclasses, smaxclasses) #
 			csa=read(solarf,"capacity_cspplantA");
 		    csb =read(solarf,"capacity_cspplantB");
 
-	demand1 = JLD.load(GE.in_datafolder("output","SyntheticDemand_$(reg)_ssp2-26-2050_2018.jld"),"demand");
-	demand=sum(demand1)/1000*1.75-hydro(reg);
+	demandread = JLD.load(GE.in_datafolder("output","SyntheticDemand_$(reg)_ssp2-26-2050_2018.jld"),"demand");
+	demand=sum(demandread)/1000*1.15-hydro(reg);  #Consider transmission loss and hydropower output
 	meanCF_a = mean_skipNaN_dim12(cfpva)
 	meanCF_b = mean_skipNaN_dim12(cfpvb)
 	meanCF_r = mean_skipNaN_dim12(cfr)
@@ -79,7 +79,7 @@ function supply_pv(reg, plant_area, persons_per_km2, sminclasses, smaxclasses) #
 	# investcost = Dict(:pv => 323, :pvroof => 423, :CSP => 3746, :wind => 825, :offwind => 1500)
 	# fixedcost = Dict(:pv => 8, :pvroof => 6, :CSP => 56, :wind => 33, :offwind => 55)
 	# lifetime = Dict(:pv => 25, :CSP => 30, :wind => 25, :offwind => 25)
-	wacc = 0.05 #You can define this value based on the country specific data
+	wacc = JLD.load("Discount.jld", reg) #You can define this value based on the country specific data
 	sannualenergy_a = capacity_a .* meanCF_a .* 8760
 	sannualenergy_b = capacity_b .* meanCF_b .* 8760
 	sannualenergy_r = capacity_r .* meanCF_r .* 8760
@@ -114,15 +114,15 @@ function supply_wind(reg, area_onshore, area_offshore, max_depth, persons_per_km
 			wa=read(windf,"capacity_onshoreA");
 			wb=read(windf,"capacity_onshoreB");
 			woff=read(windf,"capacity_offshore");
-	demand1 = JLD.load(GE.in_datafolder("output","SyntheticDemand_$(reg)_ssp2-26-2050_2018.jld"),"demand");
-	demand=sum(demand1)/1000*1.75-hydro(reg);
+	demandread = JLD.load(GE.in_datafolder("output","SyntheticDemand_$(reg)_ssp2-26-2050_2018.jld"),"demand");
+	demand=sum(demandread)/1000*1.15-hydro(reg);  #Consider transmission loss and hydropower output
 	meanCF_a = mean_skipNaN_dim12(cfa)
 	meanCF_b = mean_skipNaN_dim12(cfb)
 	meanCF_off = mean_skipNaN_dim12(cfoff)
 	capacity_a = sumdrop(wa, dims=1)
 	capacity_b = sumdrop(wb, dims=1)
 	capacity_off = sumdrop(woff, dims=1)
-	wacc = 0.05 #You can define this value based on the country specific data
+	wacc = JLD.load("Discount.jld", reg) #You can define this value based on the country specific data
 	totalcost_a = capacity_a .* (825 * CRF(wacc, 25) + 33)
 	totalcost_b = capacity_b .* ((825+200) * CRF(wacc, 25) + 33)
 	totalcost_off = capacity_off .* (1500 * CRF(wacc, 25) + 55)
