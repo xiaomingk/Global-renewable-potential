@@ -2,11 +2,11 @@ using CSV, DataFrames
 function RLCOEX(reg)
 S=CSV.read("$(reg)_VRE.csv",DataFrame);
 S1=Matrix(S);
-SS=findfirst(x -> x>=1, S1[:,1])
+SS=findfirst(x -> x>=1, S1[:,2])
 if SS == nothing
-SSS=80
+SSS=200
 else
-    SSS=S1[:,2][SS]
+    SSS=S1[:,1][SS]
 end
 return SSS
 end

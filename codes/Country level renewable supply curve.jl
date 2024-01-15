@@ -5,7 +5,7 @@ S=CSV.read("$(reg)_VRE.csv",DataFrame);
 SS=Matrix(S);
 y=SS[:,1];
 x=SS[:,2];
-fn=plot(x, y,label = ["$(reg)_ uniform discount rate"], lw =1)
+fn=Plots.plot(x, y, primary=false, title ="$(reg)", titlefontsize=18, leg=:topleft, ylims=(0,200), xlabel = "Potential supply relative to demand", ylabel = "Renewable LCOE [\$\$/MWh]", lw = 2, lc = :red, framestyle=:axes,guidefontsize=14,tickfontsize=14)
 savefig(fn,"$(reg).png")
 end
 #Example for Italy

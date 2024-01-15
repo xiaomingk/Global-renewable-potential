@@ -37,7 +37,7 @@ saveTIFF(rescale,"windspeedscaleup.tif", [-180.0, -90.0, 180.0, 90.0])
 #Calculate hourly wind capacity factor;
 windspeed=zeros(36000,18000);
 windCF=zeros(36000,18000);
-function Capacit_factor(t)
+function Capacity_factor(t)
 for i in 1:1280, j in 1:640
     eralon = eralons[i]
     eralat = eralats[j]
@@ -51,7 +51,7 @@ end
 return windCF
 end
 #Calculate average wind capacity factor;
-windCF=sum(Capacit_factor(t) for t in 1:8760)/8760
+windCF=sum(Capacity_factor(t) for t in 1:8760)/8760
 saveTIFF(windCF,"windCF.tif", [-180.0, -90.0, 180.0, 90.0])
 
 #Calculate average solar capacity factor from ERA5 for 2018;

@@ -5,246 +5,243 @@ SS=Matrix(S);
 return SS
 end
 #Merge the renewable generation data for the entire world
-csvout=[CSVOUT("Afghanistan")[:,1:2]'
-CSVOUT("Albania")[:,1:2]'
-CSVOUT("Algeria")[:,1:2]'
-CSVOUT("Angola")[:,1:2]'
-CSVOUT("Argentina")[:,1:2]'
-CSVOUT("Armenia")[:,1:2]'
-CSVOUT("Australia")[:,1:2]'
-CSVOUT("Austria")[:,1:2]'
-CSVOUT("Azerbaijan")[:,1:2]'
-CSVOUT("Bangladesh")[:,1:2]'
-CSVOUT("Belarus")[:,1:2]'
-CSVOUT("Belgium")[:,1:2]'
-CSVOUT("Belize")[:,1:2]'
-CSVOUT("Benin")[:,1:2]'
-CSVOUT("Bhutan")[:,1:2]'
-CSVOUT("Bolivia")[:,1:2]'
-CSVOUT("Bosnia and Herzegovina")[:,1:2]'
-CSVOUT("Botswana")[:,1:2]'
-CSVOUT("Brazil")[:,1:2]'
-CSVOUT("Brunei")[:,1:2]'
-CSVOUT("Bulgaria")[:,1:2]'
-CSVOUT("Burkina Faso")[:,1:2]'
-CSVOUT("Burundi")[:,1:2]'
-CSVOUT("Cambodia")[:,1:2]'
-CSVOUT("Cameroon")[:,1:2]'
-CSVOUT("Canada")[:,1:2]'
-CSVOUT("Central African Republic")[:,1:2]'
-CSVOUT("Chad")[:,1:2]'
-CSVOUT("Chile")[:,1:2]'
-CSVOUT("China")[:,1:2]'
-CSVOUT("Colombia")[:,1:2]'
-CSVOUT("Costa Rica")[:,1:2]'
-CSVOUT("Côte d'Ivoire")[:,1:2]'
-CSVOUT("Croatia")[:,1:2]'
-CSVOUT("Cuba")[:,1:2]'
-CSVOUT("Cyprus")[:,1:2]'
-CSVOUT("Czech Republic")[:,1:2]'
-CSVOUT("Democratic Republic of the Congo")[:,1:2]'
-CSVOUT("Denmark")[:,1:2]'
-CSVOUT("Djibouti")[:,1:2]'
-CSVOUT("Dominican Republic")[:,1:2]'
-CSVOUT("Ecuador")[:,1:2]'
-CSVOUT("Egypt")[:,1:2]'
-CSVOUT("El Salvador")[:,1:2]'
-CSVOUT("Equatorial Guinea")[:,1:2]'
-CSVOUT("Eritrea")[:,1:2]'
-CSVOUT("Estonia")[:,1:2]'
-CSVOUT("Ethiopia")[:,1:2]'
-CSVOUT("Finland")[:,1:2]'
-CSVOUT("France")[:,1:2]'
-CSVOUT("French Guiana")[:,1:2]'
-CSVOUT("Gabon")[:,1:2]'
-CSVOUT("Gambia")[:,1:2]'
-CSVOUT("Georgia")[:,1:2]'
-CSVOUT("Germany")[:,1:2]'
-CSVOUT("Ghana")[:,1:2]'
-CSVOUT("Greece")[:,1:2]'
-CSVOUT("Guatemala")[:,1:2]'
-CSVOUT("Guinea")[:,1:2]'
-CSVOUT("Guinea-Bissau")[:,1:2]'
-CSVOUT("Guyana")[:,1:2]'
-CSVOUT("Haiti")[:,1:2]'
-CSVOUT("Honduras")[:,1:2]'
-CSVOUT("Hungary")[:,1:2]'
-CSVOUT("Iceland")[:,1:2]'
-CSVOUT("India")[:,1:2]'
-CSVOUT("Indonesia")[:,1:2]'
-CSVOUT("Iran")[:,1:2]'
-CSVOUT("Iraq")[:,1:2]'
-CSVOUT("Ireland")[:,1:2]'
-CSVOUT("Israel")[:,1:2]'
-CSVOUT("Italy")[:,1:2]'
-CSVOUT("Jamaica")[:,1:2]'
-CSVOUT("Japan")[:,1:2]'
-CSVOUT("Jordan")[:,1:2]'
-CSVOUT("Kazakhstan")[:,1:2]'
-CSVOUT("Kenya")[:,1:2]'
-CSVOUT("Kosovo")[:,1:2]'
-CSVOUT("Kuwait")[:,1:2]'
-CSVOUT("Kyrgyzstan")[:,1:2]'
-CSVOUT("Laos")[:,1:2]'
-CSVOUT("Latvia")[:,1:2]'
-CSVOUT("Lebanon")[:,1:2]'
-CSVOUT("Lesotho")[:,1:2]'
-CSVOUT("Liberia")[:,1:2]'
-CSVOUT("Libya")[:,1:2]'
-CSVOUT("Lithuania")[:,1:2]'
-CSVOUT("Luxembourg")[:,1:2]'
-CSVOUT("Macedonia")[:,1:2]'
-CSVOUT("Madagascar")[:,1:2]'
-CSVOUT("Malawi")[:,1:2]'
-CSVOUT("Malaysia")[:,1:2]'
-CSVOUT("Mali")[:,1:2]'
-CSVOUT("Mauritania")[:,1:2]'
-CSVOUT("Mexico")[:,1:2]'
-CSVOUT("Moldova")[:,1:2]'
-CSVOUT("Mongolia")[:,1:2]'
-CSVOUT("Montenegro")[:,1:2]'
-CSVOUT("Morocco")[:,1:2]'
-CSVOUT("Mozambique")[:,1:2]'
-CSVOUT("Myanmar")[:,1:2]'
-CSVOUT("Namibia")[:,1:2]'
-CSVOUT("Nepal")[:,1:2]'
-CSVOUT("Netherlands")[:,1:2]'
-CSVOUT("New Zealand")[:,1:2]'
-CSVOUT("Nicaragua")[:,1:2]'
-CSVOUT("Niger")[:,1:2]'
-CSVOUT("Nigeria")[:,1:2]'
-CSVOUT("North Korea")[:,1:2]'
-CSVOUT("Norway")[:,1:2]'
-CSVOUT("Oman")[:,1:2]'
-CSVOUT("Pakistan")[:,1:2]'
-CSVOUT("Palestina")[:,1:2]'
-CSVOUT("Panama")[:,1:2]'
-CSVOUT("Papua New Guinea")[:,1:2]'
-CSVOUT("Paraguay")[:,1:2]'
-CSVOUT("Peru")[:,1:2]'
-CSVOUT("Philippines")[:,1:2]'
-CSVOUT("Poland")[:,1:2]'
-CSVOUT("Portugal")[:,1:2]'
-CSVOUT("Puerto Rico")[:,1:2]'
-CSVOUT("Qatar")[:,1:2]'
-CSVOUT("Republic of Congo")[:,1:2]'
-CSVOUT("Romania")[:,1:2]'
-CSVOUT("Russia")[:,1:2]'
-CSVOUT("Rwanda")[:,1:2]'
-CSVOUT("Saudi Arabia")[:,1:2]'
-CSVOUT("Senegal")[:,1:2]'
-CSVOUT("Serbia")[:,1:2]'
-CSVOUT("Sierra Leone")[:,1:2]'
-CSVOUT("Slovakia")[:,1:2]'
-CSVOUT("Slovenia")[:,1:2]'
-CSVOUT("Somalia")[:,1:2]'
-CSVOUT("South Africa")[:,1:2]'
-CSVOUT("South Korea")[:,1:2]'
-CSVOUT("South Sudan")[:,1:2]'
-CSVOUT("Spain")[:,1:2]'
-CSVOUT("Sri Lanka")[:,1:2]'
-CSVOUT("Sudan")[:,1:2]'
-CSVOUT("Suriname")[:,1:2]'
-CSVOUT("Swaziland")[:,1:2]'
-CSVOUT("Sweden")[:,1:2]'
-CSVOUT("Switzerland")[:,1:2]'
-CSVOUT("Syria")[:,1:2]'
-CSVOUT("Taiwan")[:,1:2]'
-CSVOUT("Tajikistan")[:,1:2]'
-CSVOUT("Tanzania")[:,1:2]'
-CSVOUT("Thailand")[:,1:2]'
-CSVOUT("Timor-Leste")[:,1:2]'
-CSVOUT("Togo")[:,1:2]'
-CSVOUT("Trinidad and Tobago")[:,1:2]'
-CSVOUT("Tunisia")[:,1:2]'
-CSVOUT("Turkey")[:,1:2]'
-CSVOUT("Turkmenistan")[:,1:2]'
-CSVOUT("Uganda")[:,1:2]'
-CSVOUT("Ukraine")[:,1:2]'
-CSVOUT("United Kingdom")[:,1:2]'
-CSVOUT("United States")[:,1:2]'
-CSVOUT("Uruguay")[:,1:2]'
-CSVOUT("Uzbekistan")[:,1:2]'
-CSVOUT("Venezuela")[:,1:2]'
-CSVOUT("Vietnam")[:,1:2]'
-CSVOUT("Western Sahara")[:,1:2]'
-CSVOUT("Yemen")[:,1:2]'
-CSVOUT("Zambia")[:,1:2]'
-CSVOUT("Zimbabwe")[:,1:2]'
-CSVOUT("Australiaa")[:,1:2]'
-CSVOUT("Australiab")[:,1:2]'
-CSVOUT("Australiac")[:,1:2]'
-CSVOUT("Australiad")[:,1:2]'
-CSVOUT("Australiae")[:,1:2]'
-CSVOUT("Brazila")[:,1:2]'
-CSVOUT("Brazilb")[:,1:2]'
-CSVOUT("Brazilc")[:,1:2]'
-CSVOUT("Brazild")[:,1:2]'
-CSVOUT("Brazile")[:,1:2]'
-CSVOUT("Brazilf")[:,1:2]'
-CSVOUT("Canadaa")[:,1:2]'
-CSVOUT("Canadab")[:,1:2]'
-CSVOUT("Canadac")[:,1:2]'
-CSVOUT("Canadad")[:,1:2]'
-CSVOUT("Canadae")[:,1:2]'
-CSVOUT("Canadaf")[:,1:2]'
-CSVOUT("Chinaa")[:,1:2]'
-CSVOUT("Chinab")[:,1:2]'
-CSVOUT("Chinac")[:,1:2]'
-CSVOUT("Chinad")[:,1:2]'
-CSVOUT("Chinae")[:,1:2]'
-CSVOUT("Chinaf")[:,1:2]'
-CSVOUT("Indiaa")[:,1:2]'
-CSVOUT("Indiab")[:,1:2]'
-CSVOUT("Indiac")[:,1:2]'
-CSVOUT("Indiad")[:,1:2]'
-CSVOUT("Indiae")[:,1:2]'
-CSVOUT("Indiaf")[:,1:2]'
-CSVOUT("Indonesiaa")[:,1:2]'
-CSVOUT("Indonesiab")[:,1:2]'
-CSVOUT("Indonesiac")[:,1:2]'
-CSVOUT("Indonesiad")[:,1:2]'
-CSVOUT("Indonesiae")[:,1:2]'
-CSVOUT("Irana")[:,1:2]'
-CSVOUT("Iranb")[:,1:2]'
-CSVOUT("Iranc")[:,1:2]'
-CSVOUT("Irand")[:,1:2]'
-CSVOUT("Kazakhstana")[:,1:2]'
-CSVOUT("Kazakhstanb")[:,1:2]'
-CSVOUT("Kazakhstanc")[:,1:2]'
-CSVOUT("Kazakhstand")[:,1:2]'
-CSVOUT("Mexicoa")[:,1:2]'
-CSVOUT("Mexicob")[:,1:2]'
-CSVOUT("Mexicoc")[:,1:2]'
-CSVOUT("Mexicod")[:,1:2]'
-CSVOUT("Mexicoe")[:,1:2]'
-CSVOUT("Pakistana")[:,1:2]'
-CSVOUT("Pakistanb")[:,1:2]'
-CSVOUT("Pakistanc")[:,1:2]'
-CSVOUT("Pakistand")[:,1:2]'
-CSVOUT("Russiaa")[:,1:2]'
-CSVOUT("Russiab")[:,1:2]'
-CSVOUT("Russiac")[:,1:2]'
-CSVOUT("Russiad")[:,1:2]'
-CSVOUT("Russiae")[:,1:2]'
-CSVOUT("Russiaf")[:,1:2]'
-CSVOUT("Russiag")[:,1:2]'
-CSVOUT("Russiah")[:,1:2]'
-CSVOUT("Saudi Arabiaa")[:,1:2]'
-CSVOUT("Saudi Arabiab")[:,1:2]'
-CSVOUT("Saudi Arabiac")[:,1:2]'
-CSVOUT("Saudi Arabiad")[:,1:2]'
-CSVOUT("United Statesa")[:,1:2]'
-CSVOUT("United Statesb")[:,1:2]'
-CSVOUT("United Statesc")[:,1:2]'
-CSVOUT("United Statesd")[:,1:2]'
-CSVOUT("United Statese")[:,1:2]'
-CSVOUT("United Statesf")[:,1:2]'
-CSVOUT("United Statesg")[:,1:2]'
-CSVOUT("United Statesh")[:,1:2]'
-CSVOUT("United Statesi")[:,1:2]'
-CSVOUT("United Statesj")[:,1:2]'
+csvout=[CSVOUT("Afghanistan")[:,1:3]
+CSVOUT("Albania")[:,1:3]
+CSVOUT("Algeria")[:,1:3]
+CSVOUT("Angola")[:,1:3]
+CSVOUT("Argentina")[:,1:3]
+CSVOUT("Armenia")[:,1:3]
+CSVOUT("Austria")[:,1:3]
+CSVOUT("Azerbaijan")[:,1:3]
+CSVOUT("Bangladesh")[:,1:3]
+CSVOUT("Belarus")[:,1:3]
+CSVOUT("Belgium")[:,1:3]
+CSVOUT("Belize")[:,1:3]
+CSVOUT("Benin")[:,1:3]
+CSVOUT("Bhutan")[:,1:3]
+CSVOUT("Bolivia")[:,1:3]
+CSVOUT("Bosnia and Herzegovina")[:,1:3]
+CSVOUT("Botswana")[:,1:3]
+CSVOUT("Brunei")[:,1:3]
+CSVOUT("Bulgaria")[:,1:3]
+CSVOUT("Burkina Faso")[:,1:3]
+CSVOUT("Burundi")[:,1:3]
+CSVOUT("Cambodia")[:,1:3]
+CSVOUT("Cameroon")[:,1:3]
+CSVOUT("Central African Republic")[:,1:3]
+CSVOUT("Chad")[:,1:3]
+CSVOUT("Chile")[:,1:3]
+CSVOUT("Colombia")[:,1:3]
+CSVOUT("Costa Rica")[:,1:3]
+CSVOUT("Côte d'Ivoire")[:,1:3]
+CSVOUT("Croatia")[:,1:3]
+CSVOUT("Cuba")[:,1:3]
+CSVOUT("Cyprus")[:,1:3]
+CSVOUT("Czech Republic")[:,1:3]
+CSVOUT("Democratic Republic of the Congo")[:,1:3]
+CSVOUT("Denmark")[:,1:3]
+CSVOUT("Djibouti")[:,1:3]
+CSVOUT("Dominican Republic")[:,1:3]
+CSVOUT("Ecuador")[:,1:3]
+CSVOUT("Egypt")[:,1:3]
+CSVOUT("El Salvador")[:,1:3]
+CSVOUT("Equatorial Guinea")[:,1:3]
+CSVOUT("Eritrea")[:,1:3]
+CSVOUT("Estonia")[:,1:3]
+CSVOUT("Ethiopia")[:,1:3]
+CSVOUT("Finland")[:,1:3]
+CSVOUT("France")[:,1:3]
+CSVOUT("French Guiana")[:,1:3]
+CSVOUT("Gabon")[:,1:3]
+CSVOUT("Gambia")[:,1:3]
+CSVOUT("Georgia")[:,1:3]
+CSVOUT("Germany")[:,1:3]
+CSVOUT("Ghana")[:,1:3]
+CSVOUT("Greece")[:,1:3]
+CSVOUT("Guatemala")[:,1:3]
+CSVOUT("Guinea")[:,1:3]
+CSVOUT("Guinea-Bissau")[:,1:3]
+CSVOUT("Guyana")[:,1:3]
+CSVOUT("Haiti")[:,1:3]
+CSVOUT("Honduras")[:,1:3]
+CSVOUT("Hungary")[:,1:3]
+CSVOUT("Iceland")[:,1:3]
+CSVOUT("Iraq")[:,1:3]
+CSVOUT("Ireland")[:,1:3]
+CSVOUT("Israel")[:,1:3]
+CSVOUT("Italy")[:,1:3]
+CSVOUT("Jamaica")[:,1:3]
+CSVOUT("Japan")[:,1:3]
+CSVOUT("Jordan")[:,1:3]
+CSVOUT("Kenya")[:,1:3]
+CSVOUT("Kosovo")[:,1:3]
+CSVOUT("Kuwait")[:,1:3]
+CSVOUT("Kyrgyzstan")[:,1:3]
+CSVOUT("Laos")[:,1:3]
+CSVOUT("Latvia")[:,1:3]
+CSVOUT("Lebanon")[:,1:3]
+CSVOUT("Lesotho")[:,1:3]
+CSVOUT("Liberia")[:,1:3]
+CSVOUT("Libya")[:,1:3]
+CSVOUT("Lithuania")[:,1:3]
+CSVOUT("Luxembourg")[:,1:3]
+CSVOUT("Macedonia")[:,1:3]
+CSVOUT("Madagascar")[:,1:3]
+CSVOUT("Malawi")[:,1:3]
+CSVOUT("Malaysia")[:,1:3]
+CSVOUT("Mali")[:,1:3]
+CSVOUT("Mauritania")[:,1:3]
+CSVOUT("Moldova")[:,1:3]
+CSVOUT("Mongolia")[:,1:3]
+CSVOUT("Montenegro")[:,1:3]
+CSVOUT("Morocco")[:,1:3]
+CSVOUT("Mozambique")[:,1:3]
+CSVOUT("Myanmar")[:,1:3]
+CSVOUT("Namibia")[:,1:3]
+CSVOUT("Nepal")[:,1:3]
+CSVOUT("Netherlands")[:,1:3]
+CSVOUT("New Zealand")[:,1:3]
+CSVOUT("Nicaragua")[:,1:3]
+CSVOUT("Niger")[:,1:3]
+CSVOUT("Nigeria")[:,1:3]
+CSVOUT("North Korea")[:,1:3]
+CSVOUT("Norway")[:,1:3]
+CSVOUT("Oman")[:,1:3]
+CSVOUT("Palestina")[:,1:3]
+CSVOUT("Panama")[:,1:3]
+CSVOUT("Papua New Guinea")[:,1:3]
+CSVOUT("Paraguay")[:,1:3]
+CSVOUT("Peru")[:,1:3]
+CSVOUT("Philippines")[:,1:3]
+CSVOUT("Poland")[:,1:3]
+CSVOUT("Portugal")[:,1:3]
+CSVOUT("Puerto Rico")[:,1:3]
+CSVOUT("Qatar")[:,1:3]
+CSVOUT("Republic of Congo")[:,1:3]
+CSVOUT("Romania")[:,1:3]
+CSVOUT("Rwanda")[:,1:3]
+CSVOUT("Senegal")[:,1:3]
+CSVOUT("Serbia")[:,1:3]
+CSVOUT("Sierra Leone")[:,1:3]
+CSVOUT("Slovakia")[:,1:3]
+CSVOUT("Slovenia")[:,1:3]
+CSVOUT("Somalia")[:,1:3]
+CSVOUT("South Africa")[:,1:3]
+CSVOUT("South Korea")[:,1:3]
+CSVOUT("South Sudan")[:,1:3]
+CSVOUT("Spain")[:,1:3]
+CSVOUT("Sri Lanka")[:,1:3]
+CSVOUT("Sudan")[:,1:3]
+CSVOUT("Suriname")[:,1:3]
+CSVOUT("Swaziland")[:,1:3]
+CSVOUT("Sweden")[:,1:3]
+CSVOUT("Switzerland")[:,1:3]
+CSVOUT("Syria")[:,1:3]
+CSVOUT("Taiwan")[:,1:3]
+CSVOUT("Tajikistan")[:,1:3]
+CSVOUT("Tanzania")[:,1:3]
+CSVOUT("Thailand")[:,1:3]
+CSVOUT("Timor-Leste")[:,1:3]
+CSVOUT("Togo")[:,1:3]
+CSVOUT("Trinidad and Tobago")[:,1:3]
+CSVOUT("Tunisia")[:,1:3]
+CSVOUT("Turkey")[:,1:3]
+CSVOUT("Turkmenistan")[:,1:3]
+CSVOUT("Uganda")[:,1:3]
+CSVOUT("Ukraine")[:,1:3]
+CSVOUT("United Kingdom")[:,1:3]
+CSVOUT("Uruguay")[:,1:3]
+CSVOUT("Uzbekistan")[:,1:3]
+CSVOUT("Venezuela")[:,1:3]
+CSVOUT("Vietnam")[:,1:3]
+CSVOUT("Western Sahara")[:,1:3]
+CSVOUT("Yemen")[:,1:3]
+CSVOUT("Zambia")[:,1:3]
+CSVOUT("Zimbabwe")[:,1:3]
+CSVOUT("Australiaa")[:,1:3]
+CSVOUT("Australiab")[:,1:3]
+CSVOUT("Australiac")[:,1:3]
+CSVOUT("Australiad")[:,1:3]
+CSVOUT("Australiae")[:,1:3]
+CSVOUT("Brazila")[:,1:3]
+CSVOUT("Brazilb")[:,1:3]
+CSVOUT("Brazilc")[:,1:3]
+CSVOUT("Brazild")[:,1:3]
+CSVOUT("Brazile")[:,1:3]
+CSVOUT("Brazilf")[:,1:3]
+CSVOUT("Canadaa")[:,1:3]
+CSVOUT("Canadab")[:,1:3]
+CSVOUT("Canadac")[:,1:3]
+CSVOUT("Canadad")[:,1:3]
+CSVOUT("Canadae")[:,1:3]
+CSVOUT("Canadaf")[:,1:3]
+CSVOUT("Chinaa")[:,1:3]
+CSVOUT("Chinab")[:,1:3]
+CSVOUT("Chinac")[:,1:3]
+CSVOUT("Chinad")[:,1:3]
+CSVOUT("Chinae")[:,1:3]
+CSVOUT("Chinaf")[:,1:3]
+CSVOUT("Indiaa")[:,1:3]
+CSVOUT("Indiab")[:,1:3]
+CSVOUT("Indiac")[:,1:3]
+CSVOUT("Indiad")[:,1:3]
+CSVOUT("Indiae")[:,1:3]
+CSVOUT("Indiaf")[:,1:3]
+CSVOUT("Indonesiaa")[:,1:3]
+CSVOUT("Indonesiab")[:,1:3]
+CSVOUT("Indonesiac")[:,1:3]
+CSVOUT("Indonesiad")[:,1:3]
+CSVOUT("Indonesiae")[:,1:3]
+CSVOUT("Irana")[:,1:3]
+CSVOUT("Iranb")[:,1:3]
+CSVOUT("Iranc")[:,1:3]
+CSVOUT("Irand")[:,1:3]
+CSVOUT("Kazakhstana")[:,1:3]
+CSVOUT("Kazakhstanb")[:,1:3]
+CSVOUT("Kazakhstanc")[:,1:3]
+CSVOUT("Kazakhstand")[:,1:3]
+CSVOUT("Mexicoa")[:,1:3]
+CSVOUT("Mexicob")[:,1:3]
+CSVOUT("Mexicoc")[:,1:3]
+CSVOUT("Mexicod")[:,1:3]
+CSVOUT("Mexicoe")[:,1:3]
+CSVOUT("Pakistana")[:,1:3]
+CSVOUT("Pakistanb")[:,1:3]
+CSVOUT("Pakistanc")[:,1:3]
+CSVOUT("Pakistand")[:,1:3]
+CSVOUT("Russiaa")[:,1:3]
+CSVOUT("Russiab")[:,1:3]
+CSVOUT("Russiac")[:,1:3]
+CSVOUT("Russiad")[:,1:3]
+CSVOUT("Russiae")[:,1:3]
+CSVOUT("Russiaf")[:,1:3]
+CSVOUT("Russiag")[:,1:3]
+CSVOUT("Russiah")[:,1:3]
+CSVOUT("Saudi Arabiaa")[:,1:3]
+CSVOUT("Saudi Arabiab")[:,1:3]
+CSVOUT("Saudi Arabiac")[:,1:3]
+CSVOUT("Saudi Arabiad")[:,1:3]
+CSVOUT("United Statesa")[:,1:3]
+CSVOUT("United Statesb")[:,1:3]
+CSVOUT("United Statesc")[:,1:3]
+CSVOUT("United Statesd")[:,1:3]
+CSVOUT("United Statese")[:,1:3]
+CSVOUT("United Statesf")[:,1:3]
+CSVOUT("United Statesg")[:,1:3]
+CSVOUT("United Statesh")[:,1:3]
+CSVOUT("United Statesi")[:,1:3]
+CSVOUT("United Statesj")[:,1:3]
 ]
-supply = DataFrame(csvout,:auto)
+
+energy=csvout[:,3]
+share=csvout[:,2]
+lcoe=csvout[:,1]
+
+x = sortperm(lcoe)
+y = cumsum(energy[x])
+supply = DataFrame()
+supply.A = y
+supply.B = sort(lcoe)
+supply
 #Save renewable supply data with country-specific discount rate
-CSV.write("supplycountryplot.csv",supply)
+CSV.write("supplyworld country-specific discount rate.csv",supply)
