@@ -1,23 +1,23 @@
-Country ;RLCOEEx  [$/MWh]
+Country ;Cost Index [$/MWh]
 Afghanistan;35.1
-Albania;23.0
+Albania;23
 Algeria;19.7
 Angola;23.5
 Argentina;40.1
 Armenia;19.2
-Australia;23.0
+Australia;23
 Austria;39.5
 Azerbaijan;20.6
 Bangladesh;25.7
 Belarus;34.8
 Belgium;Not self-sufficient
 Belize;30.4
-Benin;19.0
+Benin;19
 Bhutan;16.7
 Bolivia;21.2
 Bosnia and Herzegovina;28.8
-Botswana;18.0
-Brazil;19.0
+Botswana;18
+Brazil;19
 Brunei;Not self-sufficient
 Bulgaria;20.2
 Burkina Faso;18.9
@@ -27,7 +27,7 @@ Cameroon;19.8
 Canada;17.5
 Central African Republic;21.6
 Chad;22.8
-Chile;16.0
+Chile;16
 China;20.4
 Colombia;17.7
 Costa Rica;25.4
@@ -50,7 +50,7 @@ Ethiopia;23.7
 Finland;40.3
 France;21.7
 French Guiana;24.4
-Gabon;28.0
+Gabon;28
 Gambia;20.4
 Georgia;20.4
 Germany;210.6
@@ -61,8 +61,8 @@ Guinea;25.4
 Guinea-Bissau;22.6
 Guyana;22.5
 Haiti;25.7
-Honduras;21.0
-Hungary;23.0
+Honduras;21
+Hungary;23
 Iceland;23.6
 India;20.3
 Indonesia;20.9
@@ -78,12 +78,12 @@ Kazakhstan;17.3
 Kenya;19.2
 Kosovo;23.4
 Kuwait;Not self-sufficient
-Kyrgyzstan;19.0
+Kyrgyzstan;19
 Laos;28.9
 Latvia;25.1
 Lebanon;Not self-sufficient
 Lesotho;25.1
-Liberia;34.0
+Liberia;34
 Libya;17.1
 Lithuania;24.4
 Luxembourg;Not self-sufficient
@@ -104,11 +104,11 @@ Namibia;19.2
 Nepal;14.3
 Netherlands;Not self-sufficient
 New Zealand;22.8
-Nicaragua;22.0
+Nicaragua;22
 Niger;18.7
 Nigeria;18.5
 North Korea;35.2
-Norway;25.0
+Norway;25
 Oman;16.3
 Pakistan;18.8
 Palestina;156.5
@@ -145,11 +145,11 @@ Switzerland;47.3
 Syria;39.4
 Tajikistan;20.1
 Tanzania;20.1
-Thailand;19.0
+Thailand;19
 Timor-Leste;16.9
 Togo;22.6
 Trinidad and Tobago;Not self-sufficient
-Tunisia;21.0
+Tunisia;21
 Turkey;21.4
 Turkmenistan;20.4
 Uganda;20.4
@@ -188,7 +188,7 @@ Chinad;Not self-sufficient
 Chinae;18.2
 Chinaf;14.2
 Indiaa;15.7
-Indiab;25.0
+Indiab;25
 Indiac;21.9
 Indiad;19.5
 Indiae;21.2
@@ -199,7 +199,7 @@ Indonesiac;18.9
 Indonesiad;19.2
 Indonesiae;24.1
 Irana;21.4
-Iranb;22.0
+Iranb;22
 Iranc;19.3
 Irand;18.8
 Kazakhstana;17.3
@@ -209,7 +209,7 @@ Kazakhstand;17.3
 Mexicoa;13.9
 Mexicob;14.1
 Mexicoc;14.6
-Mexicod;19.0
+Mexicod;19
 Mexicoe;16.4
 Pakistana;18.5
 Pakistanb;24.8
@@ -219,11 +219,11 @@ Russiaa;31.9
 Russiab;25.6
 Russiac;21.9
 Russiad;23.1
-Russiae;26.0
+Russiae;26
 Russiaf;21.6
 Russiag;23.4
 Russiah;19.8
-Saudi Arabiaa;13.0
+Saudi Arabiaa;13
 Saudi Arabiab;13.3
 Saudi Arabiac;13.1
 Saudi Arabiad;13.1

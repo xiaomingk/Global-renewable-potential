@@ -1,6 +1,6 @@
 #Renewable supply curve for the entire world under different discount rates
 using Plots, CSV, DataFrames, Plots.PlotMeasures
-S=CSV.read("supplyworld.csv",DataFrame);
+S=CSV.read("Renewable supply for the world.csv",DataFrame);
 SS=Matrix(S);
 x=SS[:,1];
 y=SS[:,2];
